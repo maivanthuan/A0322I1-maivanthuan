@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <b><label >Amount</label></b><br>
+    <input type="number"value=" " id="Amount" size="30"><br>
+    <b><label> From Currency</label></b><br>
+    <select name="fromcurrency" id="from">
+        <option> vietnam</option>
+        <option> usd</option>
+    </select><br>
+    <b><label>To Currency</label></b><br>
+    <select name="tocurrency" id="to">
+        <option value ="vietnam">USD</option>
+        <option value="usd">VietNam</option>
+    </select>
+    <button onclick="thuan">Convert</button>
+    <script>
+        function thuan() {
+            var a = document.getElementById("amount").value;
+            var b = a/23000
+            document.writeln("result :" + b);
+        }
+    </script>
+</form>
+</body>
+</html>
