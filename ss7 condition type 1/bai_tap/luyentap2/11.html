@@ -5,6 +5,21 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    var a =parseInt(prompt("nhập tiền lương tháng này của bạn"))
+    b=a*(5/100)
+    z=a*(10/100)
+    c=a*(15/100)
+    if(a>0 ) {
+        if (a<=5000000){
+            document.writeln("Thuế tháng này của bạn là "+b)
+        }else  if (a<=10000000) {
+            document.writeln("Thuế tháng này của bạn là " +z)
+        }else {
+            document.writeln("Thuế tháng này của bạn là "+c)
+        }
 
+    }
+</script>
 </body>
 </html>
