@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    var a = parseInt(prompt("nhập danh thu bán hàng"))
+
+    i=a*(5/100)
+    b=a*(10/100)
+    n=a*(15/100)
+    if (a<=1000000){
+        document.writeln("số hoa hồng bạn nhận được là "+i)
+    }else if (a<=10000000){
+        document.writeln("số hoa hồng bạn nhận được là "+b)
+    }else {
+        document.writeln("số hoa hồng bạn nhận được là " + n)
+    }
+</script>
 </body>
 </html>

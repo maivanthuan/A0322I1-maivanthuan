@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let a = parseInt(prompt("nhap a: "));
+    let b = parseInt(prompt("nhap b: "));
+    let c = parseInt(prompt("nhap c: "));
+    var d = (b * b) - (4 * a * c)
+
+    if (a == 0){
+        if(b==0){
+            if (c == 0){
+                document.writeln("ta ca la nghiem cua x");
+            }
+            else {
+                document.writeln("pt vo nghiem");
+            }
+        }
+        else {
+            document.writeln("x ="+ (-c/b));
+        }
+    }
+    else if (d>=0){
+        document.writeln("x1 = "+ ((-b + Math.sqrt(d))/ (2*a)));
+        document.writeln("x2 = "+ ((-b + -Math.sqrt(d))/ (2*a)));
+    }else {
+        document.writeln("pt vo nghiem");
+    }
+
+
+</script>
 </body>
 </html>

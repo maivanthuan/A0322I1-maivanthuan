@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    var a = parseInt(prompt("nhập điểm kiểm tra"))
+    var b = parseInt(prompt("nhập điểm giữa kì "))
+    var c = parseInt(prompt("nhập điểm cuối kì"))
+    total = (a+(b*2)+c*3)/6
+    if (total<3.5) {
+        document.writeln("học lực kém")
+    } else if (total<5) {
+        document.writeln("học lực yếu")
+    }else if (total<6.5) {
+        document.writeln("học lực trung bình")
+    }else if (total<8) {
+        document.writeln("học lực khá")
+    }else {
+        document.writeln("học lực giỏi")
+    }
+</script>
 </body>
 </html>
