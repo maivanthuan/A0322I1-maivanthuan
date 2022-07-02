@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+</head>
+<body>
+<script>
+    let ccs;
+    ccs = "<table border='4' width='1000' cellspancing='1' cellpadding='5'>"
+    for (i =2;i<=9;i++) {
+        ccs = ccs + "<tr>";
+        for (j=1;j<=9;j++) {
+            ccs=ccs+"<td>"+j+"x"+i+"="+i*j +"</td>"
+        }
+        ccs=ccs+"</tr>"
+    }
+    ccs=ccs+"</table>"
+    document.writeln(ccs)
+</script>
+</body>
+</html>

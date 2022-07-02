@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hiển thị 20 số nguyên</title>
+</head>
+<body>
+<script>
+    var number=2
+    var count = 0
+    while (count<20) {
+        var flag = true
+
+        for (let i = 2; i < number; i++) {
+            if (number % i === 0) {
+                flag = false
+                break;
+            }
+        }
+        if (flag) {
+            document.writeln(number + "<br>")
+            count++
+        }
+        number++
+    }
+</script>
+</body>
+</html>
