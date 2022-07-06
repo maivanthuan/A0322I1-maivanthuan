@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>in dãy dibonacci</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhập số lượng cần in"))
+    let n1=0
+    let n2=1
+    let f = 0
+    let count = 0
+    while (count<a) {
+        for ( let i=0;i<a;i++) {
+            document.writeln(n1+ "<br>")
+            f=n1+n2
+            n1=n2
+            n2=f
+            count++
+        }
+    }
+</script>
+</body>
+</html>
