@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhập số nguyên</title>
+</head>
+<body>
+<script>
+    let intergen = [];
+    for (let i = 0; i < 10; i++) {
+        intergen[i] = parseInt(prompt("Nhập vào 10 số"));
+    }
+    let intergen2 = parseInt(prompt("Nhập vào 1 số V bất kỳ"));
+    if (intergen.indexOf(intergen2) !== -1) {
+        document.write("V is in array ");
+    } else {
+        document.write("V is not in array ");
+    }
+</script>
+</body>
+</html>

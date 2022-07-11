@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số lớn nhât</title>
+</head>
+<body>
+<script>
+    let arry=[5,6,43,57,21,34,54,99,32,10]
+    let max;
+    let index=0
+    max=arry[0];
+    for ( let i=0;i<arry.length;i++) {
+        if (arry[i]>max){
+            max=arry[i];
+            index=i
+        }
+    }
+    document.writeln("số lớn nhất trong dãy là " +max+ " nằm ở vị trí số " +index)
+</script>
+</body>
+</html>

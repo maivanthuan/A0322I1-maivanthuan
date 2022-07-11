@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="position: absolute; left: 50%; transform: translate(-50%, 50%);" >
+ <input  type="text" id="view" >
+ <input type="button" id="submit" onclick="Search()" value="Search">
+ <p id="output_text"></p>
+<script>
+    let text =" "
+    let english=["dog","cat","fish","leon","tree","coco"]
+    let vietnam=["chó","mèo","cá","sư tử","cây","quả dừa"]
+
+
+    function Search() {
+        let valueText = document.getElementById("view").value
+        for (let i=0;i<english.length;i++) {
+            if (valueText === english[i]) {
+                text += "Translate to Tiếng việt " + vietnam[i] + "<br>"
+
+            } else if (valueText !== english[i]) {
+                text += "không tìm thấy từ " + english[i] + "<br>"
+
+            }
+        }
+        document.getElementById("output_text").innerHTML = text;
+
+    }
+</script>
+</body>
+</html>

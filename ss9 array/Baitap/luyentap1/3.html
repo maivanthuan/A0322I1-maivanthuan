@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>in ra giá trị trung bình</title>
+</head>
+<body>
+<script>
+    let array=[7,43,5,100,2,72,17,85,93]
+    let max;
+    let total=0
+    let count =0
+    let index=0
+    max=array[0]
+    for (let i=0;i<array.length;i++) {
+        if (array[i]>max) {
+            max=array[i]
+            count+=array[i]
+            index=i
+            total=count/index
+        }
+    }document.writeln("Số lớn nhất trong dãy là " + max + " index "+index +"<br>" + "Trung bình của dãy là " +total)
+</script>
+</body>
+</html>

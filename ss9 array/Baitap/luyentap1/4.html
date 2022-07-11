@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đảo ngược</title>
+</head>
+<body>
+<script>
+    let x=[7,53,2,4,2,47,0]
+    let before=0;
+    let after=x.length-1
+    for(let i=0; i<1; i++){
+        document.writeln("Dãy số đã nhập vào "+x.toString());
+    }
+    while (before<after) {
+        let b = x[before];
+        x[before] = x[after];
+        x[after] = b;
+        before++;
+        after--;
+    }
+    document.writeln( "<br>"+" Dãy số đã đảo ngược là " +x)
+</script>
+</body>
+</html>
