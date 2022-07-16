@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function footToMeter(foot) {
+        return 3.279 * foot
+    }
+   function meterToFoot(meter){
+        return 0.305 * meter
+    }
+    let meter=[20,25,60,65];
+    let feet=[];
+    let meter1=[];
+    let feet1=[1,2,9,10];
+    for (let i=0;i<meter.length;i++) {
+        feet[i]=footToMeter(meter[i])
+    }
+    for (let e=0;e<feet1.length;e++) {
+        meter1[e]=meterToFoot(feet1[e])
+    }
+    document.writeln("Nhập vào meter là: "+ meter +"<br>")
+    document.writeln("Đổi thành feet: "+ feet +"<br>")
+    document.writeln("Nhập vào feet là: "+ feet1 +"<br>")
+    document.writeln("Đổi thành meter là: "+ meter1 +"<br>")
+
+
+</script>
+</body>
+</html>
