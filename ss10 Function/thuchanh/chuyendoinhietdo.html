@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<form>
+<p><label>Fahrenheut</label>
+<input type="number" id="à há" placeholder="Fahrenheut"
+oninput="huhu(this.value)"
+onchange="huhu(this.value)">
+</p>
+<p>Celsius:<span id="outputCelsius"></span></p>
+</form>
+<SCRIPT>
+    function huhu(valnum) {
+        valnum=parseFloat(valnum);
+        document.getElementById("outputCelsius").innerHTML =(valnum-32)/1.8;
+
+    }
+</SCRIPT>
 </body>
 </html>
