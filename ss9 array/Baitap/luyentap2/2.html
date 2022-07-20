@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let array=[2,4,6,8,10]
+    let before=0
+    let after=array.length-1
+    for ( let i=0;i<1;i++) {
+        document.writeln("Dãy số đã nhập: " + array.toString())
+    }
+        while (before<after) {
+            let b = array[before];
+            array[before] = array[after];
+            array[after] = b;
+            before++;
+            after--;
+        }
+        document.writeln( "<br>"+" Dãy số đã đảo ngược là " +array)
+
+</script>
 </body>
 </html>
