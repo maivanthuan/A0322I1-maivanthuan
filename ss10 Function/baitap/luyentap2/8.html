@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function change(array) {
+        for (let i = 0; i < 1; i++) {
+            document.writeln("Dãy số đã nhập: " + array.toString())
+        }
+        while (before < after) {
+            let b = array[before];
+            array[before] = array[after];
+            array[after] = b;
+            before++;
+            after--;
+        }
+        document.writeln("<br>" + " Dãy số đã đảo ngược là " + array)
+    }
+    let array=[1,2,3,4,5,6,7,8]
+    let before=0
+    let after=array.length-1
+    change(array)
+</script>
+</body>
+</html>
