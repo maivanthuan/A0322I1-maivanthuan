@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="=200" height="100" style="border: 1px solid #ff0000"></canvas>
+<script>
+    class HinhChuNhat {
+        constructor(long,width,) {
+            this.long=long;
+            this.width=width;
+        }
+        getLong() {
+            return this.long
+        }
+        getWidth() {
+            return this.width
+        }
+        setLong(newLong) {
+            return this.long= newLong;
+        }
+        setWidth(newWidth) {
+            return this.width=newWidth;
+        }
+        area() {
+            return this.long*this.width
+        }
+        perimeter() {
+            return (this.width+this.long)*2
+        }
+    }
+    let c = document.getElementById("myCanvas");
+    let ctx = c.getContext("2d");
+    ctx.fillRect(50,0,200,100);
+    let HHinhChuNhat=new HinhChuNhat();
+    HHinhChuNhat.setLong(200);
+    HHinhChuNhat.setWidth(100);
+    HHinhChuNhat.getLong();
+    HHinhChuNhat.getWidth();
+    document.write("<br>"+"Dien tich: "+HHinhChuNhat.area()+"<br>");
+    document.write("Chu vi: "+HHinhChuNhat.perimeter());
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+class temperature {
+    constructor(Celsius, Kenvin,Fahrenheit) {
+        this.Celsius = Celsius;
+        this.Kenvin = Kenvin;
+        this.Fahrenheit=Fahrenheit
+    }
+
+    getCelsius() {
+        return this.Celsius;
+    }
+    getKenvin() {
+        return this.Kenvin;
+    }
+    getFahrenheit() {
+        return this.Fahrenheit
+    }
+    TinhDoF() {
+         this.Fahrenheit=this.Celsius*1.8+32
+        return this.Fahrenheit
+    }
+    TinhDoK () {
+        this.Kenvin=this.Celsius+273
+        return this.Kenvin
+    }
+}
+    let Temperature =new temperature(100)
+        document.write("c to f: "+Temperature.TinhDoF()+"<br>");
+        document.write("c to k: "+Temperature.TinhDoK());
+
+
+
+</script>
+</body>
+</html>

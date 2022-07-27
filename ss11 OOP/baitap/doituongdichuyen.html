@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Đơn Giản</title>
+</head>
+<body>
+<div id="game"></div>
+<script>
+    function superman(image, top, left, size){
+        this.image = image;
+        this.top = top;
+        this.left = left;
+        this.size = size;
+
+        this.getTankElement = function(){
+            return '<img width="'+ this.size + '"' +
+                ' height="'+ this.size + '"' +
+                ' src="' + this.image +'"' +
+                ' style="top: '+this.top+'px; left:'+this.left+'px;position:absolute;" />';
+        }
+
+        this.moveRight = function(){
+            this.left += 100;
+            console.log('ok: ' + this.left);
+        }
+        this.moveLeft = function(){
+            this.left = 100;
+            console.log('ok: ' + this.left);
+        }
+    }
+
+    let Superman = new superman('https://cand.com.vn/Files/Image/linhbui/2018/06/04/thumb_660_f144a00f-b0ca-4544-b3d7-07ed3405c442.jpg', 100, 120, 500);
+
+    function start(){
+        if(Superman.left < window.innerWidth - Superman.size) {
+            Superman.moveRight();
+        } else if (Superman.left>window.innerWidth-Superman.size){
+            Superman.moveLeft();
+        }
+        document.getElementById('game').innerHTML = Superman.getTankElement();
+        setTimeout(start, 500)
+    }
+
+    start();
+</script>
+</body>
+</html>
