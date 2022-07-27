@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input type="text" id="view0">
+<input type="text" id="view1"><br>
+<button type="button" name="op" value="+" onclick="cong()">Addition(+)</button>
+<button type="button" name="op" value="-" onclick="tru()">Subtraction(-)</button>
+<button type="button" name="op" value="*" onclick="nhan()">Bultiplication(x)</button>
+<button type="button" name="op" value="/" onclick="chia()">Division(/)</button>
+<script>
+    function cong() {
+        let num1=parseInt(document.getElementById("view0").value)
+        let num2=parseInt(document.getElementById("view1").value)
+        alert(num1+num2)
+    }
+    function tru() {
+        let num1=parseInt(document.getElementById("view0").value)
+        let num2=parseInt(document.getElementById("view1").value)
+        alert(num1-num2)
+    }
+    function nhan() {
+        let num1=parseInt(document.getElementById("view0").value)
+        let num2=parseInt(document.getElementById("view1").value)
+        alert(num1*num2)
+    }
+    function chia() {
+        let num1=parseInt(document.getElementById("view0").value)
+        let num2=parseInt(document.getElementById("view1").value)
+        alert(num1/num2)
+    }
+</script>
 </body>
 </html>
